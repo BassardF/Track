@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14B25" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Exercice" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="goals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Goal" inverseName="exercice" inverseEntity="Goal" syncable="YES"/>
+        <relationship name="records" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Record" inverseName="exercice" inverseEntity="Record" syncable="YES"/>
+    </entity>
+    <entity name="Goal" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="rest" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="series" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="exercice" maxCount="1" deletionRule="Nullify" destinationEntity="Exercice" inverseName="goals" inverseEntity="Exercice" syncable="YES"/>
+        <relationship name="reps" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Reps" inverseName="goal" inverseEntity="Reps" syncable="YES"/>
+    </entity>
+    <entity name="Record" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="rest" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="series" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="exercice" maxCount="1" deletionRule="Nullify" destinationEntity="Exercice" inverseName="records" inverseEntity="Exercice" syncable="YES"/>
+        <relationship name="reps" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Reps" inverseName="record" inverseEntity="Reps" syncable="YES"/>
+    </entity>
+    <entity name="Reps" syncable="YES">
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="goal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Goal" inverseName="reps" inverseEntity="Goal" syncable="YES"/>
+        <relationship name="record" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Record" inverseName="reps" inverseEntity="Record" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Exercice" positionX="-74" positionY="-70" width="128" height="88"/>
+        <element name="Record" positionX="90" positionY="-45" width="128" height="118"/>
+        <element name="Goal" positionX="-243" positionY="-46" width="128" height="118"/>
+        <element name="Reps" positionX="-74" positionY="65" width="128" height="88"/>
+    </elements>
+</model>

@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		4423BAEE1A724FDB00A06B50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423BAED1A724FDB00A06B50 /* AppDelegate.swift */; };
-		4423BAF01A724FDB00A06B50 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423BAEF1A724FDB00A06B50 /* FirstViewController.swift */; };
-		4423BAF21A724FDB00A06B50 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423BAF11A724FDB00A06B50 /* SecondViewController.swift */; };
+		4423BAF01A724FDB00A06B50 /* ExercicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423BAEF1A724FDB00A06B50 /* ExercicesViewController.swift */; };
+		4423BAF21A724FDB00A06B50 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423BAF11A724FDB00A06B50 /* GoalViewController.swift */; };
 		4423BAF51A724FDB00A06B50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4423BAF31A724FDB00A06B50 /* Main.storyboard */; };
 		4423BAF71A724FDB00A06B50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4423BAF61A724FDB00A06B50 /* Images.xcassets */; };
 		4423BAFA1A724FDB00A06B50 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4423BAF81A724FDB00A06B50 /* LaunchScreen.xib */; };
 		4423BB061A724FDB00A06B50 /* trackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423BB051A724FDB00A06B50 /* trackTests.swift */; };
+		4423BB101A7253D200A06B50 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423BB0F1A7253D200A06B50 /* RecordViewController.swift */; };
+		4423BB131A732D0900A06B50 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423BB121A732D0900A06B50 /* StatsViewController.swift */; };
+		4423BB161A74547B00A06B50 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4423BB141A74547B00A06B50 /* Model.xcdatamodeld */; };
+		4423BB211A7459E700A06B50 /* ExerciceDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423BB201A7459E700A06B50 /* ExerciceDAO.swift */; };
+		4423BB231A7459F200A06B50 /* GoalDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423BB221A7459F200A06B50 /* GoalDAO.swift */; };
+		4423BB251A7459FB00A06B50 /* RepsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423BB241A7459FB00A06B50 /* RepsDAO.swift */; };
+		4423BB271A745A0500A06B50 /* RecordDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423BB261A745A0500A06B50 /* RecordDAO.swift */; };
+		4423BB2A1A7460D800A06B50 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4423BB291A7460D800A06B50 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +38,22 @@
 		4423BAE81A724FDB00A06B50 /* track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = track.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4423BAEC1A724FDB00A06B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4423BAED1A724FDB00A06B50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4423BAEF1A724FDB00A06B50 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		4423BAF11A724FDB00A06B50 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4423BAEF1A724FDB00A06B50 /* ExercicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercicesViewController.swift; sourceTree = "<group>"; };
+		4423BAF11A724FDB00A06B50 /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		4423BAF41A724FDB00A06B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4423BAF61A724FDB00A06B50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4423BAF91A724FDB00A06B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4423BAFF1A724FDB00A06B50 /* trackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = trackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4423BB041A724FDB00A06B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4423BB051A724FDB00A06B50 /* trackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackTests.swift; sourceTree = "<group>"; };
+		4423BB0F1A7253D200A06B50 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		4423BB121A732D0900A06B50 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		4423BB151A74547B00A06B50 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4423BB201A7459E700A06B50 /* ExerciceDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciceDAO.swift; sourceTree = "<group>"; };
+		4423BB221A7459F200A06B50 /* GoalDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalDAO.swift; sourceTree = "<group>"; };
+		4423BB241A7459FB00A06B50 /* RepsDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepsDAO.swift; sourceTree = "<group>"; };
+		4423BB261A745A0500A06B50 /* RecordDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordDAO.swift; sourceTree = "<group>"; };
+		4423BB291A7460D800A06B50 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4423BB2A1A7460D800A06B50 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 		4423BADF1A724FDB00A06B50 = {
 			isa = PBXGroup;
 			children = (
+				4423BB291A7460D800A06B50 /* CoreData.framework */,
 				4423BAEA1A724FDB00A06B50 /* track */,
 				4423BB021A724FDB00A06B50 /* trackTests */,
 				4423BAE91A724FDB00A06B50 /* Products */,
@@ -80,9 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				4423BAED1A724FDB00A06B50 /* AppDelegate.swift */,
-				4423BAEF1A724FDB00A06B50 /* FirstViewController.swift */,
-				4423BAF11A724FDB00A06B50 /* SecondViewController.swift */,
+				4423BB111A7253DD00A06B50 /* controllers */,
+				4423BB281A745A1200A06B50 /* DAOs */,
 				4423BAF31A724FDB00A06B50 /* Main.storyboard */,
+				4423BB141A74547B00A06B50 /* Model.xcdatamodeld */,
 				4423BAF61A724FDB00A06B50 /* Images.xcassets */,
 				4423BAF81A724FDB00A06B50 /* LaunchScreen.xib */,
 				4423BAEB1A724FDB00A06B50 /* Supporting Files */,
@@ -113,6 +132,28 @@
 				4423BB041A724FDB00A06B50 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4423BB111A7253DD00A06B50 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4423BB0F1A7253D200A06B50 /* RecordViewController.swift */,
+				4423BB121A732D0900A06B50 /* StatsViewController.swift */,
+				4423BAEF1A724FDB00A06B50 /* ExercicesViewController.swift */,
+				4423BAF11A724FDB00A06B50 /* GoalViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		4423BB281A745A1200A06B50 /* DAOs */ = {
+			isa = PBXGroup;
+			children = (
+				4423BB201A7459E700A06B50 /* ExerciceDAO.swift */,
+				4423BB221A7459F200A06B50 /* GoalDAO.swift */,
+				4423BB241A7459FB00A06B50 /* RepsDAO.swift */,
+				4423BB261A745A0500A06B50 /* RecordDAO.swift */,
+			);
+			name = DAOs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +256,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4423BAF21A724FDB00A06B50 /* SecondViewController.swift in Sources */,
+				4423BB211A7459E700A06B50 /* ExerciceDAO.swift in Sources */,
+				4423BAF21A724FDB00A06B50 /* GoalViewController.swift in Sources */,
+				4423BB271A745A0500A06B50 /* RecordDAO.swift in Sources */,
+				4423BB251A7459FB00A06B50 /* RepsDAO.swift in Sources */,
 				4423BAEE1A724FDB00A06B50 /* AppDelegate.swift in Sources */,
-				4423BAF01A724FDB00A06B50 /* FirstViewController.swift in Sources */,
+				4423BAF01A724FDB00A06B50 /* ExercicesViewController.swift in Sources */,
+				4423BB131A732D0900A06B50 /* StatsViewController.swift in Sources */,
+				4423BB101A7253D200A06B50 /* RecordViewController.swift in Sources */,
+				4423BB161A74547B00A06B50 /* Model.xcdatamodeld in Sources */,
+				4423BB231A7459F200A06B50 /* GoalDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +457,7 @@
 				4423BB0B1A724FDB00A06B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4423BB0C1A724FDB00A06B50 /* Build configuration list for PBXNativeTarget "trackTests" */ = {
 			isa = XCConfigurationList;
@@ -417,8 +466,22 @@
 				4423BB0E1A724FDB00A06B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4423BB141A74547B00A06B50 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4423BB151A74547B00A06B50 /* Model.xcdatamodel */,
+			);
+			currentVersion = 4423BB151A74547B00A06B50 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4423BAE01A724FDB00A06B50 /* Project object */;
 }
